@@ -20,7 +20,7 @@ public class Television implements ElectronicDevice {
 
     @Override
     public void volumeDown() {
-
+System.out.println("Television volume is turn down.");
     }
 
 }
