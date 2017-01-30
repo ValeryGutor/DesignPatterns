@@ -1,0 +1,5 @@
+What is the Command Design Pattern?
+
+1. Allow you to store a list of code that is executed at a later time or many times.
+2. Client says I want a specific behavioral.command to run when execute() is called on 1 of these encapsulated (hidden) Objects.
+3. An object called the Invoker transfers this behavioral.command to another object called the Receiver to execute the right code.
