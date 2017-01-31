@@ -5,8 +5,8 @@ package behavioral.visitor.taxVisitor;
 
 public interface Visitor {
 
-     double visit(Liquor liquer);
-     double visit(Tobacco tobacco);
-     double visit(Necessity necessity);
+     float visit(Liquor liquer);
+     float visit(Tobacco tobacco);
+     float visit(Necessity necessity);
 
 }

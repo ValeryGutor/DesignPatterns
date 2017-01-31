@@ -1,20 +1,28 @@
 package behavioral.visitor.taxVisitor;
 
-// Concrete Visitor Class
-
 import java.text.DecimalFormat;
 
-public class TaxVisitor implements Visitor {
+// Concrete Visitor Class
 
-    private DecimalFormat df = new DecimalFormat("#.##");
+class TaxHolidayVisitor implements Visitor {
+
+    // This formats the item prices to 2 decimal places
+
+    DecimalFormat df = new DecimalFormat("#.##");
+
+    // This is created so that each item is sent to the
+    // right version of visit() which is required by the
+    // Visitor interface and defined below
+
+    public TaxHolidayVisitor() {
+    }
 
     // Calculates total price based on this being taxed
     // as a liquor item
 
-    @Override
-    public float visit(Liquor liquor) {
+    public float visit(Liquor liquorItem) {
         System.out.println("Liquor Item: Price with Tax");
-        return Float.parseFloat(df.format((liquor.getPrice() * .18))) + liquor.getPrice();
+        return Float.parseFloat(df.format((liquorItem.getPrice() * .10) + liquorItem.getPrice()));
     }
 
     // Calculates total price based on this being taxed
@@ -22,7 +30,7 @@ public class TaxVisitor implements Visitor {
 
     public float visit(Tobacco tobaccoItem) {
         System.out.println("Tobacco Item: Price with Tax");
-        return Float.parseFloat(df.format((tobaccoItem.getPrice() * .32) + tobaccoItem.getPrice()));
+        return Float.parseFloat(df.format((tobaccoItem.getPrice() * .30) + tobaccoItem.getPrice()));
     }
 
     // Calculates total price based on this being taxed
@@ -31,7 +39,6 @@ public class TaxVisitor implements Visitor {
     public float visit(Necessity necessityItem) {
         System.out.println("Necessity Item: Price with Tax");
         return Float.parseFloat(df.format(necessityItem.getPrice()));
-
     }
 
 }

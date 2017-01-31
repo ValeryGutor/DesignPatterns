@@ -1,0 +1,8 @@
+Призначення: Відвідувач (Visitor) дозволяє відділити певний алгоритм від елементів, на яких алгоритм
+має бути виконаний, таким чином дозволяючи легко додати або ж змінити алгоритм без зміни елементів системи.
+
+Intent. Represent an operation to be performed on the elements of an object structure. Visitor lets you define
+a new operation without changing the classes of the elements on which it operates.
+
+Відвідувач. Призначення. Представляє операцію, яка має бути виконана на елементах структури об’єкта.
+Відвідувач дозволяє визначити нову операцію без зміни класів елементів-операндів.
