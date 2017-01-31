@@ -1,4 +1,4 @@
-package behavioral.command.EverydayExample_Runnable;
+package behavioral.command.everydayExample_Runnable;
 
 public class Task implements Runnable {
 

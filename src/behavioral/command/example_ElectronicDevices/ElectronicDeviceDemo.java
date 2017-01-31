@@ -1,4 +1,4 @@
-package behavioral.command.Example_ElectronicDevices;
+package behavioral.command.example_ElectronicDevices;
 
 public class ElectronicDeviceDemo {
 

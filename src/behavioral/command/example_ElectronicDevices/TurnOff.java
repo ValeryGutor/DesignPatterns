@@ -1,4 +1,4 @@
-package behavioral.command.Example_ElectronicDevices;
+package behavioral.command.example_ElectronicDevices;
 
 // concrete command;
 public class TurnOff implements Command {

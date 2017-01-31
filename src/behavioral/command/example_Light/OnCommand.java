@@ -1,4 +1,4 @@
-package behavioral.command.Example_Light;
+package behavioral.command.example_Light;
 
 // concrete command;
 public class OnCommand implements Command {

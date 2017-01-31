@@ -1,4 +1,4 @@
-package behavioral.command.Example_Light;
+package behavioral.command.example_Light;
 
 // receiver;
 public class Light {
