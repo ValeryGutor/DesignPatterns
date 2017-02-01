@@ -1,0 +1,4 @@
+Flyweight. Intent. Use sharing to support large numbers of fine-grained objects efficiently.
+
+Легковаговик. Призначення. Ефективна підтримка великої кількості об’єктів шляхом виділення спільної
+інформації.
